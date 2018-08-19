@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>ZeroORM.Extensibility</id>
+		<version>1.0.1</version>
+		<authors>George Bessonov</authors>
+		<owners>bessgeor</owners>
+		<licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+		<projectUrl>https://github.com/bessgeor/ZeroORM.Extensibility</projectUrl>
+		<iconUrl>http://github.com/bessgeor/ZeroORM/raw/master/icon.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Core package for ZeroORM developing. Contains main service interfaces for extending ZeroORM by adding new metadata sources, DB drivers and so on. Is not intended for linking directly in non-ZeroORM projects.</description>
+		<dependencies>		
+			<dependency id="Hellbrick.Diagnostics" version="3.1.1" />
+			<dependency id="Hellbrick.NoCapture" version="1.0.3" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="src\bin\Release\**\*.*" target="lib" />
+	</files>
+</package>
