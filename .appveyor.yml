@@ -1,4 +1,4 @@
-version: '1.0.{build}'
+version: '1.0.1-dev-{build}'
 dotnet_csproj:
   patch: true
   file: '**\*.csproj'
@@ -11,7 +11,7 @@ before_build:
   - dotnet restore
 build_script:
   - dotnet build --no-restore -c Release
-  - nuget pack -properties version=$Env:APPVEYOR_BUILD_VERSION
+  - ps: nuget pack -properties version=$Env:APPVEYOR_BUILD_VERSION
 test_script:
   - ps: |
       cd test
