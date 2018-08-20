@@ -11,7 +11,7 @@
 		<requireLicenseAcceptance>false</requireLicenseAcceptance>
 		<description>Core package for ZeroORM developing. Contains main service interfaces for extending ZeroORM by adding new metadata sources, DB drivers and so on. Is not intended for linking directly in non-ZeroORM projects.</description>
 		<dependencies>		
-			<dependency id="Hellbrick.Diagnostics" version="3.1.1" />
+			<dependency id="Hellbrick.Diagnostics" version="3.1.1" exclude="all" />
 			<dependency id="Hellbrick.NoCapture" version="1.0.3" />
 		</dependencies>
 	</metadata>
