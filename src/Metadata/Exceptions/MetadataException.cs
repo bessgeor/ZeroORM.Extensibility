@@ -5,7 +5,7 @@ namespace ZeroORM.Extensibility.Metadata.Exceptions
 	/// <summary>
 	/// Marker parent type for metadata excpetions
 	/// </summary>
-	public abstract class MetadataException : Exception
+	public abstract class MetadataException : ZeroORMException
 	{
 		public MetadataException() { }
 		public MetadataException(string message) : base(message) { }

@@ -2,7 +2,7 @@
 
 namespace ZeroORM.Extensibility.Common.Expressions.Exceptions
 {
-	public class ExpressionsException : Exception
+	public class ExpressionsException : ZeroORMException
 	{
 		public ExpressionsException() { }
 		public ExpressionsException(string message) : base(message) { }
